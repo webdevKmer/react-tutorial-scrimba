@@ -1,6 +1,6 @@
 function MainComponent() {
     return (    
-      <div className="MainComponent">
+      <div className="mainComponent">
         <h1>Fun facts about React</h1>
         <ul className='list'>
             <li>First Release in 2013</li>
