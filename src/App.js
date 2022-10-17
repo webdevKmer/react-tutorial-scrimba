@@ -1,11 +1,15 @@
 import logo from './logo.svg';
+import Navbar from './Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello from React</h1>
-    </div>
+    <>
+      <div className="App">
+        <Navbar />
+        <h1>Hello from React</h1>
+      </div>
+    </>
   );
 }
 
