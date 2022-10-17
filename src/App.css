@@ -1,8 +1,49 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.list{
+  margin: 2rem 0 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 2rem;
+}
+.header li{
+  cursor: pointer;
+}
+
+.header img{
+  width: 150px;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
 }

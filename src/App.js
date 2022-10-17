@@ -1,15 +1,15 @@
-import logo from './logo.svg';
-import Navbar from './Navbar';
 import './App.css';
+import Header from './components/Header';
+import MainComponent from './components/MainComponent';
+import Footer from './components/Footer'
 
 function App() {
-  return (
-    <>
-      <div className="App">
-        <Navbar />
-        <h1>Hello from React</h1>
-      </div>
-    </>
+  return (    
+    <div className="App">
+      <Header />
+      <MainComponent />
+      <Footer />
+    </div>
   );
 }
 
