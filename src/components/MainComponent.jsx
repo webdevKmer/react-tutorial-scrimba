@@ -1,12 +1,16 @@
 import React from 'react'
+import Hero from './Hero'
 import About from './About'
-import Interests from './Interests'
+import Grid from './Grid'
 
-export default function MainComponent() {
+function MainComponent() {
   return (
     <div className="main">
+        <Hero />
         <About />
-        <Interests />
+        <Grid />
     </div>
   )
 }
+
+export default MainComponent

@@ -9,18 +9,39 @@
   font-size: 1.25rem;
   padding: 1rem;
   margin: 0 auto;
-  width: 550px;
-  height: 888px;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   background-color: #918E9B;
 }
-.container {
-  width: 317px;
+.navbar {
+  padding-left: 3rem;
+  margin-bottom: 2rem 0;
+}
+.navbar img {
+  height: 35px;
+}
+
+.main {
+  width: 90%;
   margin: 0 auto;
-  background-color: #1A1B21;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  color: white;
+}
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero img{
+  width:  100%;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
