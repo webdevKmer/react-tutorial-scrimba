@@ -1,10 +1,9 @@
 import React from 'react'
-import HeroImg from "../images/photo-grid.png"
 
 function Hero() {
   return (
     <div className="hero">
-        <img src={HeroImg} alt="picture grid" />
+        <img src="../images/photo-grid.png" alt="picture grid" />
     </div>
   )
 }
