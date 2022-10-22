@@ -1,10 +1,12 @@
 import React from 'react'
-import Grid from './Grid'
+import MemeForm from './MemeForm'
+import MemeCard from './MemeCard'
 
 function MainComponent() {
   return (
     <div className="main">        
-        <Grid />
+        <MemeForm />
+        <MemeCard />
     </div>
   )
 }

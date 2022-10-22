@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <img className="logo" src='../images/star.png' alt='logo'/>
-      <div>My Travel Journal.</div>
+      <div>Meme Generator</div>
     </nav>
   )
 }
