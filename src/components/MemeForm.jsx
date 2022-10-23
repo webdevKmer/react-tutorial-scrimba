@@ -3,25 +3,64 @@ import memes from '../memesData'
 
 
 function MemeForm() {
-  // memes = memes.data.memes
-  function getRandomMemeUrl(){    
-    // console.log(Math.random() * memes.data.memes.length);
+
+  const [formData, setFormData] = React.useState({
+    topText : "",
+    bottomText : "",
+    memeImage : ""
+    })
+
+  function getRandomMemeUrl(){
     let idx = Math.floor(Math.random() * memes.data.memes.length)
-    console.log(idx)
-    console.log(memes.data.memes[idx].url)
+    return memes.data.memes[idx].url
   }
-  function handleClick() {
-    console.log("got clicked!!");
+
+  function handleChange(e) {
+    const {name, value} = e.target
+    e.preventDefault()
+    console.log("changing input!!");
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name] : value
+    }))
   }
-  function handleMouseOver() {
-    console.log("Mouse is hovering top text!!!!!");
+
+  function handleClick(e) {
+    e.preventDefault()
+    setFormData(prevFormData => ({
+      ...prevFormData, memeImage : getRandomMemeUrl()
+    }))
+    console.log("Submitting the form!");
+    console.log(formData, formData.memeImage);
   }
+
   return (
-    <div className="meme-form">
-      <input onMouseOver={handleMouseOver} className='top-text' type="text" placeholder='Top Text' />
-      <input onMouseOver={getRandomMemeUrl} className='bottom-text' type="text" placeholder='Bottom Text' />
-      <input onClick={handleClick} className='form-btn' type="submit" value="Get a new image" />
+    <>
+    <form className="meme-form" onSubmit={handleClick}>
+      <input
+      onChange={handleChange}
+      className='top-text'
+      type="text"
+      placeholder='Top Text'
+      name='topText'
+      value={formData.topText}
+      />
+      <input
+      onChange={handleChange}
+      className='bottom-text'
+      type="text"
+      placeholder='Bottom Text'
+      name='bottomText'
+      value={formData.bottomText}
+      />
+      <button className='form-btn'>Get a new image</button>
+    </form>
+    <div className="meme-card">
+      <img src={formData.memeImage} alt="meme" />
+      <h3 className="card-top-text">{formData.topText}</h3>
+      <h3 className="card-bottom-text">{formData.bottomText}</h3>
     </div>
+    </>
   )
 }
 
