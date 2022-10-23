@@ -51,6 +51,10 @@
 .upper {
   text-transform: uppercase;
 }
+.star-wars{
+  min-height: 100vh;
+  margin-top: 2rem;
+}
 .newsletter-form{
   min-height: 100vh;
   margin-top: 2rem;
