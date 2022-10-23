@@ -1,4 +1,3 @@
-import logo from './../images/logo.svg';
 
 function Header(props) {
     return (
@@ -6,10 +5,7 @@ function Header(props) {
          <nav 
             className={props.darkMode ? "dark": ""}
         >
-            <img 
-                className="nav--logo_icon"
-                src="./images/react-icon-small.png"
-            />
+            <img alt="" className="nav--logo_icon" src="./images/react-icon-small.png" />
             <h3 className="nav--logo_text">ReactFacts</h3>
             
             <div 

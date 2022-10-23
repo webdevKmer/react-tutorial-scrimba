@@ -7,7 +7,7 @@ function App() {
   return (    
     <div className="container">
       <Header />
-      <MainComponent />
+      <MainComponent darkMode="dark"/>
       <Footer />
     </div>
   );
