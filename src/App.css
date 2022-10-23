@@ -33,12 +33,13 @@
   flex-direction: column;
 }
 .input {
+  display: block;
   width: 90%;
+  margin: 0 auto;
   padding: .5rem 1rem;
   font-size: 1.5rem;
   border-radius: .5rem;
   border: 1px solid slategrey;
-  flex: 1 1 300px;
 }
 .btn{
   background-color: blueviolet;
@@ -50,7 +51,29 @@
 .upper {
   text-transform: uppercase;
 }
+.newsletter-form{
+  min-height: 100vh;
+  margin-top: 2rem;
+}
+.newsletter-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.check{
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1rem;
+  font-style: italic;
+  color: slategrey;
+}
+.check input{
+  width: 20px;
+}
 .boxes{
+  min-height: 100vh;
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
