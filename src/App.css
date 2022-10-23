@@ -51,11 +51,7 @@
 .upper {
   text-transform: uppercase;
 }
-.star-wars{
-  min-height: 100vh;
-  margin-top: 2rem;
-}
-.newsletter-form{
+.newsletter-form, .star-wars, .window-tracker{
   min-height: 100vh;
   margin-top: 2rem;
 }
