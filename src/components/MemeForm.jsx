@@ -1,18 +1,28 @@
-import React from 'react'
-import memes from '../memesData'
+import React, { useState } from 'react'
 
 
 function MemeForm() {
+
+  const [memes, setMemes] = useState([])
 
   const [formData, setFormData] = React.useState({
     topText : "",
     bottomText : "",
     memeImage : ""
     })
+  
+  React.useEffect(() =>{
+
+    fetch("https://api.imgflip.com/get_memes")
+      .then(res => res.json())
+      .then(data => (setMemes(data.data.memes)))
+    
+    console.log(memes);
+  }, [])
 
   function getRandomMemeUrl(){
-    let idx = Math.floor(Math.random() * memes.data.memes.length)
-    return memes.data.memes[idx].url
+    let idx = Math.floor(Math.random() * memes.length)
+    return memes[idx].url
   }
 
   function handleChange(e) {
