@@ -1,12 +1,10 @@
 import React from 'react'
-import MemeForm from './MemeForm'
-import MemeCard from './MemeCard'
+import BoxGrid from './BoxGrid'
 
 function MainComponent() {
   return (
-    <div className="main">        
-        <MemeForm />
-        <MemeCard />
+    <div className="main">
+      <BoxGrid darkMode={true} />
     </div>
   )
 }
