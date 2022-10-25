@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -17,7 +18,10 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-
+.footer{
+  padding: .5rem 0;
+  text-align: center;
+}
 /* NAV styles */
 
 nav {
@@ -54,7 +58,7 @@ nav.dark {
 }
 
 .toggler p {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
@@ -110,7 +114,7 @@ nav.dark .toggler--slider {
 
 /* MAIN styles */
 main {
-  padding: "57px 27px";
+  padding: 4rem 4rem;
   background-image: url(//public/images/react-icon-light.png); 
   background-repeat: no-repeat;
   background-position: right center;
