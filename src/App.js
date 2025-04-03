@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import Navbar from './Navbar';
+import RLogo from "./logo.svg"
+import Header from './Header';
+import Main from './Main';
 import './App.css';
 
 function App() {
   return (
     <>
       <div className="App">
-        <Navbar />
-        <h1>Hello from React</h1>
+        <Header />
+        <Main />
       </div>
     </>
   );
