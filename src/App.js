@@ -1,6 +1,5 @@
-import RLogo from "./logo.svg"
-import Header from './Header';
-import Main from './Main';
+import Header from './components/react-facts/Header';
+import Main from './components/react-facts/Main';
 import './App.css';
 
 function App() {
