@@ -1,5 +1,4 @@
-import Header from './components/react-facts/Header';
-import Main from './components/react-facts/Main';
+import Header from './components/travel-journal/Header';
 import './App.css';
 
 function App() {
@@ -7,7 +6,6 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <Main />
       </div>
     </>
   );

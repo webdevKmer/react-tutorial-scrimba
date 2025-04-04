@@ -1,4 +1,4 @@
-import Rlogo from "./logo.svg" 
+import Rlogo from "../../logo.svg" 
 const Main = () => {
   return (
     <main>

@@ -4,7 +4,7 @@ const Header = () => {
     <header>
         <div className="logo">
             <img src={logo} width={60} alt="React Logo" />
-            <span>ReactFacts</span>
+            <span>My Travel Journal</span>
         </div>
     </header>
   )
