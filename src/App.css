@@ -11,7 +11,7 @@
 }
 nav{
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
 }
 nav ul{
@@ -38,10 +38,30 @@ main li::before{
   content: "o";
   margin-right: 1.5rem;
 }
-main img{
+/* main img{
   position: absolute;
   top: 0;
   left: 400px;
   z-index: -50;
   opacity: .3;
+} */
+.entry{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.entry-data{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.entry-image img{
+  width: 100%;
+}
+.entry-data .location{
+  display: flex;
+  gap: 2rem;
 }
