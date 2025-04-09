@@ -1,0 +1,29 @@
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    max-width: 750px;
+}
+form button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+form button:hover{
+    cursor: pointer;
+}
+form input{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 450px;
+}

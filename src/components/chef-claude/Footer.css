@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: whitesmoke;
+    padding: 1rem 2rem;
+}
+footer button{
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background-color: bisque;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer button:hover{
+    cursor: pointer;
+}

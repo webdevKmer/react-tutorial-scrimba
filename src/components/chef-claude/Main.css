@@ -1,0 +1,9 @@
+main{
+    background-color: azure;
+    padding: 1rem 2rem;
+}
+main section{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
