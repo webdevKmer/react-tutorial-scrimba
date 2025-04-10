@@ -1,15 +1,13 @@
 import "./Main.css"
 const Main = () => {
   const ingredients = ["Chicken", "Oregano", "Tomatoes"]
-  
+  const ingredientsList = ingredients.map(ingredient => <li>{ingredient}</li>)
   return (
     <main>
       <section>
         <h2>Ingredients on Hand :</h2>
         <ul>
-            <li>Sugar</li>
-            <li>Coffee</li>
-            <li>Coconut</li>
+            {ingredientsList}
         </ul>
       </section>
     </main>
